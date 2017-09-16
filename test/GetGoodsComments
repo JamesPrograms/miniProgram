@@ -1,0 +1,18 @@
+{
+    "goods_comments":[
+        {
+            "id": "1",
+            "img_urls":[
+                "../../../images/goods_detail/comment_1.jpg",
+                "../../../images/goods_detail/comment_2.jpg",
+                "../../../images/goods_detail/comment_3.jpg",
+                "../../../images/goods_detail/comment_4.jpg"
+            ],
+            "username": "来东",
+            "user_level": "PLUS会员",
+            "user_comment": "货不错，包装的也很好，就是盆小了点，总体还满意",
+            "date":"2017-09-11",
+            "has_buy":"蒂亚"
+        }
+    ]
+}

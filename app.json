@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/search/search",
+    "pages/index/search_result/search_result",
+    "pages/index/goods_classification/goods_classification",
+    "pages/index/get_coupons/get_coupons",
+    "pages/cart/cart",
+    "pages/cart/goods_detail/goods_detail",
+    "pages/user_info/user_info",
+    "pages/user_info/my_order/my_order",
+    "pages/user_info/order_detail/order_detail",
+    "pages/user_info/received_coupons/received_coupons"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": " #c81624",
+    "navigationBarTitleText": "京东购物",
+    "navigationBarTextColor": "#fff"
+  },
+  "tabBar": {
+    "selectedColor": "red",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabbar/home.png",
+        "selectedIconPath": "images/tabbar/home_sel.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "images/tabbar/buycar.png",
+        "selectedIconPath": "images/tabbar/buycar_sel.png"
+      },
+      {
+        "pagePath": "pages/user_info/user_info",
+        "text": "我的",
+        "iconPath": "images/tabbar/me.png",
+        "selectedIconPath": "images/tabbar/me_sel.png"
+      }
+    ]
+  }
+}

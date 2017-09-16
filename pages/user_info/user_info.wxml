@@ -1,0 +1,61 @@
+<view class="my-container">
+    <view class="user-wechat-info">
+        <!--头像渲染-->
+        <image src="{{wechatInfo.avatarUrl}}"></image>
+        <view class="words-info">
+            <!--昵称渲染-->
+            <view class="nick-name">{{wechatInfo.nickName}}</view>
+            <view class="jd-account">
+                <label>账号: </label>
+                <text>XXXXXXXXXXXXXXX</text>
+            </view>
+        </view>
+    </view>
+    <!--5个订单相关模块-->
+    <view class="order-details">
+        <!--点击链接到全部订单列表页-->
+        <navigator class="order-detail" url="../user_info/my_order/my_order?activeIndex=0">
+            <view class="detail-info">
+                <image class="order-icon" src="../../images/user_info/all_orders.png"></image>
+                <text class="item-name">全部订单</text>
+                <image class="right-array" src="../../images/user_info/left_grey_array.png"></image>
+                <text class="item-num">{{allOrders}}</text>
+            </view>
+        </navigator>
+        <!--点击链接到待付款列表页-->
+        <navigator class="order-detail" url="../user_info/my_order/my_order?activeIndex=1">
+            <view class="detail-info">
+                <image class="order-icon" src="../../images/user_info/not_paided.png"></image>
+                <text class="item-name">待付款</text>
+                <image class="right-array" src="../../images/user_info/left_grey_array.png"></image>
+                <text class="item-num">{{unpaidOrder}}</text>
+            </view>
+        </navigator>
+        <!--点击链接到待收货页-->
+        <navigator class="order-detail" url="../user_info/my_order/my_order?activeIndex=2">
+            <view class="detail-info">
+                <image class="order-icon" src="../../images/user_info/not_received.png"></image>
+                <text class="item-name">待收货</text>
+                <image class="right-array" src="../../images/user_info/left_grey_array.png"></image>
+                <text class="item-num">{{notReceivedOrder}}</text>
+            </view>
+        </navigator>
+        <!--点击弹出售后订单后台设置提示-->
+        <view class="order-detail" bindtap="tapPaidOrder">
+            <view class="detail-info">
+                <image class="order-icon" src="../../images/user_info/paid_order.png"></image>
+                <text class="item-name">售后订单</text>
+                <image class="right-array" src="../../images/user_info/left_grey_array.png"></image>
+            </view>
+        </view>
+    </view>
+    <!--点击链接到已领到的优惠券列表页-->
+    <navigator class="discount-coupon" url="../user_info/received_coupons/received_coupons">
+        <view class="detail-info">
+            <image class="order-icon" src="../../images/user_info/discound_card.png"></image>
+            <text class="item-name">优惠券</text>
+            <image class="right-array" src="../../images/user_info/left_grey_array.png"></image>
+            <text class="item-num">{{discountCard}}</text>
+        </view>
+    </navigator>
+</view>
